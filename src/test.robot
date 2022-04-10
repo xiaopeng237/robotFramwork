@@ -6,7 +6,7 @@ Library           DatabaseLibrary
 *** Test Cases ***
 
 登陆ssh终端
-    Open Connection    172.21.70.208
+    Open Connection    ${Device_IP}
     ${output}=    Login    root    root
 
 设置PMT电压
