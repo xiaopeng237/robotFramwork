@@ -34,7 +34,7 @@ FPGA参数配置
     Should Contain    ${dataOut}    0
 
 链接数据库
-    Connect To Database Using Custom Params    pymysql     database='FLOW_Para',user='root',password='root',host='172.21.70.208',port=3306
+    Connect To Database Using Custom Params    pymysql     database='FLOW_Para',user='root',password='root',host='${Device_IP}',port=3306
 
 数据库查询
     @{result}    Query    select * from FlowMinute;
